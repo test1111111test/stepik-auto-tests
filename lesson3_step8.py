@@ -24,7 +24,7 @@ try:
     x = x_element.text
     y = calc(x)
         
-    # Вводим ответ в текстовое поле
+    # Вводим ответ в текстовое поле бот
     input1 = browser.find_element_by_css_selector("div.container div #answer")
     input1.send_keys(y)
     
@@ -40,3 +40,4 @@ finally:
     time.sleep(10)
     # закрываем браузер после всех манипуляций
     browser.quit()
+
